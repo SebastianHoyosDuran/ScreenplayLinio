@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="4553a3ddf0f500f77f07cff1375d72fda9faa8615d6ef46c9b2020f59f99faa5.html">HU-01 Configuracion De Cuenta</a></span>
+                > <span class="truncate-60"><a
+                    href="a46a068c5880b20604a3629e8d747a86da9ff19d7772dd636141b4f922c06ed2.html">Agregar una nueva direccion de entrega </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-12-2021 10:48</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">HU-01 Configuracion De Cuenta </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario de Linio<br />
+Quiero modificar informacion de mi cuenta<br />
+Para mantenerla actualizada
+                                </div>
+                            </div>
+
+                            <div class="requirementNarrative">Background: Logearse en Linio
+                                    <p></p>
+                            </div>
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="0218fdbc5052f69d3f1f3166bb7e2fb1aaba25c78a7c7745c14ed1ccd35fa8dc.html">Scenario2
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Agregar una nueva direccion de entrega
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">When Modifique los nuevos valores &lt;telefono&gt; &lt;direccion&gt; &lt;barrio&gt; &lt;departamento&gt; &lt;municipio&gt; en Mis direcciones<br>Then podre ver la nueva &lt;municipio&gt; en la lista</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="fe05e3082bfe786550c777aa143a97568719f039c75d3e7e3445265a3378233a.png" title=" Example: {telefono=3123456789, direccion=Calle 123 # 45 - 67, barrio=Barrio Nuevo, departamento=Antioquia, municipio=Medellin}" width="1920"/>
+                <img src="fe05e3082bfe786550c777aa143a97568719f039c75d3e7e3445265a3378233a.png" title=" Given dado que me logueo en la pagina de linio" width="1920"/>
+                <img src="fe05e3082bfe786550c777aa143a97568719f039c75d3e7e3445265a3378233a.png" title=" When vaya al apartado de configuracion de mi cuenta" width="1920"/>
+                <img src="fe05e3082bfe786550c777aa143a97568719f039c75d3e7e3445265a3378233a.png" title=" Sebastian hacer login" width="1920"/>
+                <img src="fe05e3082bfe786550c777aa143a97568719f039c75d3e7e3445265a3378233a.png" title=" Sebastian enters 'sebastiansqa@yopmail.com' into " width="1920"/>
+                <img src="212f01f5968f7b1bdc5a6c48f080c7defe3a47c5155206310571e4e665b4e1c3.png" title=" Sebastian enters 'sebastiansqa@yopmail.com' into  (completed)" width="1920"/>
+                <img src="212f01f5968f7b1bdc5a6c48f080c7defe3a47c5155206310571e4e665b4e1c3.png" title=" Sebastian enters 'AutomatizacionSQA2021' into " width="1920"/>
+                <img src="3bb9e711e2e9e9f861773cbce5f2c302f5684d3282dcec3b7d4766475a3a5248.png" title=" Sebastian enters 'AutomatizacionSQA2021' into  (completed)" width="1920"/>
+                <img src="3bb9e711e2e9e9f861773cbce5f2c302f5684d3282dcec3b7d4766475a3a5248.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="670b7feb7d64130114b37a628ecbce17f1f7daadf567a362801de440ec100872.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="670b7feb7d64130114b37a628ecbce17f1f7daadf567a362801de440ec100872.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="36991d9061db6fd18207093f4bba3300cfff17b5289ac102d62fae88b6a556c7.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="36991d9061db6fd18207093f4bba3300cfff17b5289ac102d62fae88b6a556c7.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="b02d8ce1b0fc47e2ad59a854a8c41e126bbc97cbf22e2862d20c75ee4188a419.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="b02d8ce1b0fc47e2ad59a854a8c41e126bbc97cbf22e2862d20c75ee4188a419.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="c457fd4917b88898bd8c3ae5bfd1d37a3420bdd784e3c5773b263f454d77a07d.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="c457fd4917b88898bd8c3ae5bfd1d37a3420bdd784e3c5773b263f454d77a07d.png" title=" Sebastian hacer login (completed)" width="1920"/>
+                <img src="c457fd4917b88898bd8c3ae5bfd1d37a3420bdd784e3c5773b263f454d77a07d.png" title=" When vaya al apartado de configuracion de mi cuenta (completed)" width="1920"/>
+                <img src="c457fd4917b88898bd8c3ae5bfd1d37a3420bdd784e3c5773b263f454d77a07d.png" title=" When Modifique los nuevos valores 3123456789 Calle 123 # 45 - 67 Barrio Nuevo Antioquia Medellin en Mis direcciones" width="1920"/>
+                <img src="c457fd4917b88898bd8c3ae5bfd1d37a3420bdd784e3c5773b263f454d77a07d.png" title=" Sebastian editar direccion" width="1920"/>
+                <img src="6555a517adab4f99121496f6a9d79dd2ccc47b8010e4a4cafa342c3fc383d66a.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="d50836fac7d3ff1f78c07a43967cbc19de71da3bd79142c7ea6cdb339e6742b5.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="d50836fac7d3ff1f78c07a43967cbc19de71da3bd79142c7ea6cdb339e6742b5.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="7bd6c8029729d831a9992be3ca7aa7fae7e220883e214dfb3feebdf01f38a7b1.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="7bd6c8029729d831a9992be3ca7aa7fae7e220883e214dfb3feebdf01f38a7b1.png" title=" Sebastian enters '3123456789 Calle 123 # 45 - 67' into " width="1920"/>
+                <img src="df8eb633c8b3db871bcb298b634ca5fd838945bb4858d242a5cf21ec9fd925e8.png" title=" Sebastian enters '3123456789 Calle 123 # 45 - 67' into  (completed)" width="1920"/>
+                <img src="df8eb633c8b3db871bcb298b634ca5fd838945bb4858d242a5cf21ec9fd925e8.png" title=" Sebastian enters 'Barrio' into " width="1920"/>
+                <img src="b18558f0a82c3f0b9a30fb4e7624ebe4346027a2b6955908ba0f28f02549bb76.png" title=" Sebastian enters 'Barrio' into  (completed)" width="1920"/>
+                <img src="b18558f0a82c3f0b9a30fb4e7624ebe4346027a2b6955908ba0f28f02549bb76.png" title=" Sebastian enters 'Nuevo' into " width="1920"/>
+                <img src="d6455b06be9c348679ea7644c67a37a0eb2583fb5ccc8c0caaef8b2f88157129.png" title=" Sebastian enters 'Nuevo' into  (completed)" width="1920"/>
+                <img src="d6455b06be9c348679ea7644c67a37a0eb2583fb5ccc8c0caaef8b2f88157129.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="e97425b18153f8d4295464eaf409551f1087dd4a7e64f821d420e2040a56910b.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="e97425b18153f8d4295464eaf409551f1087dd4a7e64f821d420e2040a56910b.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="a6c424018801f48b6d850e45edb9e1712281b3fa0587c44e77fff30fa5ff7239.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="a6c424018801f48b6d850e45edb9e1712281b3fa0587c44e77fff30fa5ff7239.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="28ab2ae8984fb27e59cf017823a36bab3ec9868adda917e636f6011b9b60bd5e.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="28ab2ae8984fb27e59cf017823a36bab3ec9868adda917e636f6011b9b60bd5e.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="582c1c3f9b72234caef7ce706badfe3d34d91ebac794156a039f602456302c13.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="582c1c3f9b72234caef7ce706badfe3d34d91ebac794156a039f602456302c13.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="8056490e4a6ea15c3a3f928a4fb52dede4268d40a793681816feaf98bfd183b1.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="8056490e4a6ea15c3a3f928a4fb52dede4268d40a793681816feaf98bfd183b1.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="ddd2e0c7fb22d8395d3ce762a16c441eba19c7bb92f383d1ef25e4aea3a3b3f7.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="ddd2e0c7fb22d8395d3ce762a16c441eba19c7bb92f383d1ef25e4aea3a3b3f7.png" title=" Sebastian editar direccion (completed)" width="1920"/>
+                <img src="ddd2e0c7fb22d8395d3ce762a16c441eba19c7bb92f383d1ef25e4aea3a3b3f7.png" title=" When Modifique los nuevos valores 3123456789 Calle 123 # 45 - 67 Barrio Nuevo Antioquia Medellin en Mis direcciones (completed)" width="1920"/>
+                <img src="ddd2e0c7fb22d8395d3ce762a16c441eba19c7bb92f383d1ef25e4aea3a3b3f7.png" title=" Then podre ver la nueva Medellin en la lista" width="1920"/>
+                <img src="ddd2e0c7fb22d8395d3ce762a16c441eba19c7bb92f383d1ef25e4aea3a3b3f7.png" title=" Then  should be an element containing 'Medellin'" width="1920"/>
+                <img src="df33f6e90f2f8d099260c6a0f39c5100784a88db9f48f55debf7986ad3758729.png" title=" Then  should be an element containing 'Medellin' (completed)" width="1920"/>
+                <img src="df33f6e90f2f8d099260c6a0f39c5100784a88db9f48f55debf7986ad3758729.png" title=" Then podre ver la nueva Medellin en la lista (completed)" width="1920"/>
+                <img src="df33f6e90f2f8d099260c6a0f39c5100784a88db9f48f55debf7986ad3758729.png" title=" Example: {telefono=3123456789, direccion=Calle 123 # 45 - 67, barrio=Barrio Nuevo, departamento=Antioquia, municipio=Medellin} (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.80</span>
+</div>
+</body>
+</html>

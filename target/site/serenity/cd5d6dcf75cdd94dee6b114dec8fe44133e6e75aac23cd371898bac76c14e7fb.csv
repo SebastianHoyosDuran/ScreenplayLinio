@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"HU-01 Configuracion de cuenta","Actualizar mis datos personales","SUCCESS","2021-12-17T10:34:37.63-05:00[America/Bogota]","0.0","9.93"
+"HU-01 Configuracion de cuenta","Agregar una nueva direccion de entrega","SUCCESS","2021-12-17T10:34:47.643-05:00[America/Bogota]","0.0","12.69"
+"HU-01 Configuracion de cuenta","hacer login de manera exitosa","SUCCESS","2021-12-17T10:35:01.544-05:00[America/Bogota]","0.0","6.69"

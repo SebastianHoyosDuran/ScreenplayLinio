@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="HU-01 Configuracion de cuenta" skipped="0" tests="2" time="18.22" timestamp="2021-12-17 10:49:36"><testcase name="hacer login de manera exitosa"/><testcase name="hacer login de manera fallida"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+tasks.HacerLogin.performAs(HacerLogin.java:37)&#13;
+stepsDefinitions.LinioLoginStepsDefinitons.ingreseLosDatosDeManeraIncorrecta(LinioLoginStepsDefinitons.java:42)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

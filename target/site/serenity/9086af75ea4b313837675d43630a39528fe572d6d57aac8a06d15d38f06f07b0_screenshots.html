@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="723d7194a6f11d49a085cb578705de949dcbfced6d4bc1470cfc64d96e8692e4.html">HU-01 Busqueda De Un Grupo De Productos De Forma Aleatoria</a></span>
+                > <span class="truncate-60"><a
+                    href="9086af75ea4b313837675d43630a39528fe572d6d57aac8a06d15d38f06f07b0.html">Buscar un producto </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-12-2021 10:45</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">HU-01 Busqueda De Un Grupo De Productos De Forma Aleatoria </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario de Linio<br />
+Quiero buscar un grupo de productos en la plataforma<br />
+Para ver el nombre del producto en pantalla
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Buscar un producto
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given que me encuentro en linio<br>When busque &lt;categoria&gt; en el buscador y seleccione un item de manera aleatoria<br>Then podre validar su &lt;categoria&gt; en pantalla</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="2ace04bd740d5d5546a4f9c1bf3639d3f573d2dd8ba1e59506c9fe7260d0b498.png" title=" Example: {categoria=Celular}" width="1920"/>
+                <img src="2ace04bd740d5d5546a4f9c1bf3639d3f573d2dd8ba1e59506c9fe7260d0b498.png" title=" Given que me encuentro en linio" width="1920"/>
+                <img src="2ace04bd740d5d5546a4f9c1bf3639d3f573d2dd8ba1e59506c9fe7260d0b498.png" title=" When busque Celular en el buscador y seleccione un item de manera aleatoria" width="1920"/>
+                <img src="4794c111e4fa7a116410ca5afafe7fe35f53365e607ca94f03b6d416a777c1c4.png" title=" Sebastian buscar categoria" width="1920"/>
+                <img src="4794c111e4fa7a116410ca5afafe7fe35f53365e607ca94f03b6d416a777c1c4.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="eec2c5f0ecdfeb18b5ea920c3264ab5b7011e3bdffe512c7c6d365b445ba1eab.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="eec2c5f0ecdfeb18b5ea920c3264ab5b7011e3bdffe512c7c6d365b445ba1eab.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="604cd1270622a2f54a563633551a393219d04a8cd1c5f0fea5796704451d136b.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="604cd1270622a2f54a563633551a393219d04a8cd1c5f0fea5796704451d136b.png" title=" Sebastian enters 'Celular' into " width="1920"/>
+                <img src="1541aefd0dd6944961c256a715bf94136f6423878c074944379d655ec8d1e31f.png" title=" Sebastian enters 'Celular' into  (completed)" width="1920"/>
+                <img src="1541aefd0dd6944961c256a715bf94136f6423878c074944379d655ec8d1e31f.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="8f3c971450e7f752c1d098f8e218344ce944640197887dfe3fe993d842b3bed1.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="e0cbe7833c5c5f35e1498c293609145e398ce5cdac93a76fdb6ef4ed98392f43.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="205974e3d9cbe3bcd87b16a5ececc67f1f6cd1c3cab6a32e21741e62b752e912.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="205974e3d9cbe3bcd87b16a5ececc67f1f6cd1c3cab6a32e21741e62b752e912.png" title=" Sebastian buscar categoria (completed)" width="1920"/>
+                <img src="205974e3d9cbe3bcd87b16a5ececc67f1f6cd1c3cab6a32e21741e62b752e912.png" title=" When busque Celular en el buscador y seleccione un item de manera aleatoria (completed)" width="1920"/>
+                <img src="205974e3d9cbe3bcd87b16a5ececc67f1f6cd1c3cab6a32e21741e62b752e912.png" title=" Then podre validar su Celular en pantalla" width="1920"/>
+                <img src="6d037fee20f5cbf26e6fe66a27fb78402000dedce2ea39b109587098711ff712.png" title=" Then  should be an element containing 'Celular'" width="1920"/>
+                <img src="6d037fee20f5cbf26e6fe66a27fb78402000dedce2ea39b109587098711ff712.png" title=" Then  should be an element containing 'Celular' (completed)" width="1920"/>
+                <img src="88f3e2573a226510920a7f923b312e9227428a833b428cc8e91353d3e5949215.png" title=" Then podre validar su Celular en pantalla (completed)" width="1920"/>
+                <img src="88f3e2573a226510920a7f923b312e9227428a833b428cc8e91353d3e5949215.png" title=" Example: {categoria=Celular} (completed)" width="1920"/>
+                <img src="28105236c5357dd5d2444f4b4574fd38a6097c1323bddf1458bf33b099608419.png" title=" Example: {categoria=Billetera}" width="1920"/>
+                <img src="28105236c5357dd5d2444f4b4574fd38a6097c1323bddf1458bf33b099608419.png" title=" Given que me encuentro en linio" width="1920"/>
+                <img src="28105236c5357dd5d2444f4b4574fd38a6097c1323bddf1458bf33b099608419.png" title=" When busque Billetera en el buscador y seleccione un item de manera aleatoria" width="1920"/>
+                <img src="28105236c5357dd5d2444f4b4574fd38a6097c1323bddf1458bf33b099608419.png" title=" Sebastian buscar categoria" width="1920"/>
+                <img src="28105236c5357dd5d2444f4b4574fd38a6097c1323bddf1458bf33b099608419.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="b018634b087f9f325dbf3cfde9353d497dc4b0eaa0d9a79d2ba70bf2a53186b0.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="b018634b087f9f325dbf3cfde9353d497dc4b0eaa0d9a79d2ba70bf2a53186b0.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="5820ee0e74894570d30e4e7aa16bc2f5fa06f044a743a2f9f672212ea3b38fe6.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="5820ee0e74894570d30e4e7aa16bc2f5fa06f044a743a2f9f672212ea3b38fe6.png" title=" Sebastian enters 'Billetera' into " width="1920"/>
+                <img src="c1f6479f5cb03efaf101ac3ca597820d66583ce1344b78097e29ad17bd245131.png" title=" Sebastian enters 'Billetera' into  (completed)" width="1920"/>
+                <img src="c1f6479f5cb03efaf101ac3ca597820d66583ce1344b78097e29ad17bd245131.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="94d0395bc08da4bdb2d9ed3fa5601b18665378e3ff0593c025a4936693111d58.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="4a8539b336a4631bfa34c3079a4122151b4799b82c2baf64185c2752e973ccba.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="2f3c56873ef030ee6acf55bd7b187295002e970058d9f2a024c629650a10a15c.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="2f3c56873ef030ee6acf55bd7b187295002e970058d9f2a024c629650a10a15c.png" title=" Sebastian buscar categoria (completed)" width="1920"/>
+                <img src="2f3c56873ef030ee6acf55bd7b187295002e970058d9f2a024c629650a10a15c.png" title=" When busque Billetera en el buscador y seleccione un item de manera aleatoria (completed)" width="1920"/>
+                <img src="2f3c56873ef030ee6acf55bd7b187295002e970058d9f2a024c629650a10a15c.png" title=" Then podre validar su Billetera en pantalla" width="1920"/>
+                <img src="2f3c56873ef030ee6acf55bd7b187295002e970058d9f2a024c629650a10a15c.png" title=" Then  should be an element containing 'Billetera'" width="1920"/>
+                <img src="85bb1be17d96d5ad039e664c0d625cf08c08314c24b29dede8901c910d1e17bd.png" title=" Then  should be an element containing 'Billetera' (completed)" width="1920"/>
+                <img src="85bb1be17d96d5ad039e664c0d625cf08c08314c24b29dede8901c910d1e17bd.png" title=" Then podre validar su Billetera en pantalla (completed)" width="1920"/>
+                <img src="85bb1be17d96d5ad039e664c0d625cf08c08314c24b29dede8901c910d1e17bd.png" title=" Example: {categoria=Billetera} (completed)" width="1920"/>
+                <img src="28105236c5357dd5d2444f4b4574fd38a6097c1323bddf1458bf33b099608419.png" title=" Example: {categoria=Carro}" width="1920"/>
+                <img src="28105236c5357dd5d2444f4b4574fd38a6097c1323bddf1458bf33b099608419.png" title=" Given que me encuentro en linio" width="1920"/>
+                <img src="28105236c5357dd5d2444f4b4574fd38a6097c1323bddf1458bf33b099608419.png" title=" When busque Carro en el buscador y seleccione un item de manera aleatoria" width="1920"/>
+                <img src="28105236c5357dd5d2444f4b4574fd38a6097c1323bddf1458bf33b099608419.png" title=" Sebastian buscar categoria" width="1920"/>
+                <img src="28105236c5357dd5d2444f4b4574fd38a6097c1323bddf1458bf33b099608419.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="eec2c5f0ecdfeb18b5ea920c3264ab5b7011e3bdffe512c7c6d365b445ba1eab.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="eec2c5f0ecdfeb18b5ea920c3264ab5b7011e3bdffe512c7c6d365b445ba1eab.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="072d4c41c935efdae79e8c5a2ec6fc97684eea70d1ad580b8650fe58e5f1c71b.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="072d4c41c935efdae79e8c5a2ec6fc97684eea70d1ad580b8650fe58e5f1c71b.png" title=" Sebastian enters 'Carro' into " width="1920"/>
+                <img src="13f929c4f9918a63ee6398bd1dccf3500fcafe0c1c70124e1f91e3cd2903955b.png" title=" Sebastian enters 'Carro' into  (completed)" width="1920"/>
+                <img src="13f929c4f9918a63ee6398bd1dccf3500fcafe0c1c70124e1f91e3cd2903955b.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="0f0167ef283dcc66f66f131ba9f9e87110695c74c16d7f7dabaca2d847c17959.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="af14d941c4f18062c5bab694fc34fc44d3718ba168f6840776f32abab6f34392.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="e0b94c4f83b3a94ae258c54d8cdabd8ac31bdf4786b795573c132ead72fd955b.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="e0b94c4f83b3a94ae258c54d8cdabd8ac31bdf4786b795573c132ead72fd955b.png" title=" Sebastian buscar categoria (completed)" width="1920"/>
+                <img src="e0b94c4f83b3a94ae258c54d8cdabd8ac31bdf4786b795573c132ead72fd955b.png" title=" When busque Carro en el buscador y seleccione un item de manera aleatoria (completed)" width="1920"/>
+                <img src="e0b94c4f83b3a94ae258c54d8cdabd8ac31bdf4786b795573c132ead72fd955b.png" title=" Then podre validar su Carro en pantalla" width="1920"/>
+                <img src="e0b94c4f83b3a94ae258c54d8cdabd8ac31bdf4786b795573c132ead72fd955b.png" title=" Then  should be an element containing 'Carro'" width="1920"/>
+                <img src="f722374d6e9d25510c633d584cd7d0c41342cd63e0d64c5a28354380fdc1b004.png" title=" Then  should be an element containing 'Carro' (completed)" width="1920"/>
+                <img src="f722374d6e9d25510c633d584cd7d0c41342cd63e0d64c5a28354380fdc1b004.png" title=" Then podre validar su Carro en pantalla (completed)" width="1920"/>
+                <img src="f722374d6e9d25510c633d584cd7d0c41342cd63e0d64c5a28354380fdc1b004.png" title=" Example: {categoria=Carro} (completed)" width="1920"/>
+                <img src="ea79ed61ad1a2b7c486798073a2ed724236a5ba25f6bd4cd6f8569ef72e76ff8.png" title=" Example: {categoria=Flor}" width="1920"/>
+                <img src="ea79ed61ad1a2b7c486798073a2ed724236a5ba25f6bd4cd6f8569ef72e76ff8.png" title=" Given que me encuentro en linio" width="1920"/>
+                <img src="ea79ed61ad1a2b7c486798073a2ed724236a5ba25f6bd4cd6f8569ef72e76ff8.png" title=" When busque Flor en el buscador y seleccione un item de manera aleatoria" width="1920"/>
+                <img src="ea79ed61ad1a2b7c486798073a2ed724236a5ba25f6bd4cd6f8569ef72e76ff8.png" title=" Sebastian buscar categoria" width="1920"/>
+                <img src="ea79ed61ad1a2b7c486798073a2ed724236a5ba25f6bd4cd6f8569ef72e76ff8.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="989de01dc1e3086ecb753e56d6e4f08f6a95eb7d19095778d2d1e97a5ace230d.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="989de01dc1e3086ecb753e56d6e4f08f6a95eb7d19095778d2d1e97a5ace230d.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="4edfca8a370f0975fa5c2d323ae79759b47ec8a014929b809504ef29c785a354.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="c10679730fa79932a85c9981f359445a140f389a00591fe93e08d8c05121eb1d.png" title=" Sebastian enters 'Flor' into " width="1920"/>
+                <img src="46287455865b4dbbf41bc6288e26157e88ce189e7044af2a0942805f9ee0ad3c.png" title=" Sebastian enters 'Flor' into  (completed)" width="1920"/>
+                <img src="46287455865b4dbbf41bc6288e26157e88ce189e7044af2a0942805f9ee0ad3c.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="95805f4bcaeeebae198a143224ea7a09de27840533d071d198d18b84ed789c05.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="95805f4bcaeeebae198a143224ea7a09de27840533d071d198d18b84ed789c05.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="101e7e9c0a9f934efdcad3bba49de9ea34079b0f9fc3dac5b9c5fbe71972a8ac.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="101e7e9c0a9f934efdcad3bba49de9ea34079b0f9fc3dac5b9c5fbe71972a8ac.png" title=" Sebastian buscar categoria (completed)" width="1920"/>
+                <img src="101e7e9c0a9f934efdcad3bba49de9ea34079b0f9fc3dac5b9c5fbe71972a8ac.png" title=" When busque Flor en el buscador y seleccione un item de manera aleatoria (completed)" width="1920"/>
+                <img src="101e7e9c0a9f934efdcad3bba49de9ea34079b0f9fc3dac5b9c5fbe71972a8ac.png" title=" Then podre validar su Flor en pantalla" width="1920"/>
+                <img src="101e7e9c0a9f934efdcad3bba49de9ea34079b0f9fc3dac5b9c5fbe71972a8ac.png" title=" Then  should be an element containing 'Flor'" width="1920"/>
+                <img src="111bf96780a6463f8dfcd621d98c5f906faf9d7db94f602141bea6961e1ab551.png" title=" Then  should be an element containing 'Flor' (completed)" width="1920"/>
+                <img src="111bf96780a6463f8dfcd621d98c5f906faf9d7db94f602141bea6961e1ab551.png" title=" Then podre validar su Flor en pantalla (completed)" width="1920"/>
+                <img src="111bf96780a6463f8dfcd621d98c5f906faf9d7db94f602141bea6961e1ab551.png" title=" Example: {categoria=Flor} (completed)" width="1920"/>
+                <img src="8e30f7d73f1cc7dbd3315061081b8737c13b7aebeeb748ffbfd2a1a64cb0bd5a.png" title=" Example: {categoria=Mouse}" width="1920"/>
+                <img src="8e30f7d73f1cc7dbd3315061081b8737c13b7aebeeb748ffbfd2a1a64cb0bd5a.png" title=" Given que me encuentro en linio" width="1920"/>
+                <img src="8e30f7d73f1cc7dbd3315061081b8737c13b7aebeeb748ffbfd2a1a64cb0bd5a.png" title=" When busque Mouse en el buscador y seleccione un item de manera aleatoria" width="1920"/>
+                <img src="8e30f7d73f1cc7dbd3315061081b8737c13b7aebeeb748ffbfd2a1a64cb0bd5a.png" title=" Sebastian buscar categoria" width="1920"/>
+                <img src="8e30f7d73f1cc7dbd3315061081b8737c13b7aebeeb748ffbfd2a1a64cb0bd5a.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="ca3430824e0a8dedb2ebb93487f6b7c9a70c7410066ee79889dbf15e446807ff.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="ca3430824e0a8dedb2ebb93487f6b7c9a70c7410066ee79889dbf15e446807ff.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="b6525511ba573571d6989d8fcc6604f50c5c510a5268b57e048b06f696a4a61c.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="b6525511ba573571d6989d8fcc6604f50c5c510a5268b57e048b06f696a4a61c.png" title=" Sebastian enters 'Mouse' into " width="1920"/>
+                <img src="e47492cb380f042d5391eddee20b81332d351b775dcf97331df6df4f9e6b5e19.png" title=" Sebastian enters 'Mouse' into  (completed)" width="1920"/>
+                <img src="e47492cb380f042d5391eddee20b81332d351b775dcf97331df6df4f9e6b5e19.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="9490589eb47addfc85b23abb8b3010ff13b2d512f5f09e75f0fc9ed6490a245d.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="6c2f43d584fe3df629bc638e944d801cae19792a6bf0f5f147b344d254549432.png" title=" Sebastian clicks on " width="1920"/>
+                <img src="e8f30a021e718de839424ca4137ef3c0a85400bc518c86d33391ee094ff36853.png" title=" Sebastian clicks on  (completed)" width="1920"/>
+                <img src="e8f30a021e718de839424ca4137ef3c0a85400bc518c86d33391ee094ff36853.png" title=" Sebastian buscar categoria (completed)" width="1920"/>
+                <img src="e8f30a021e718de839424ca4137ef3c0a85400bc518c86d33391ee094ff36853.png" title=" When busque Mouse en el buscador y seleccione un item de manera aleatoria (completed)" width="1920"/>
+                <img src="e8f30a021e718de839424ca4137ef3c0a85400bc518c86d33391ee094ff36853.png" title=" Then podre validar su Mouse en pantalla" width="1920"/>
+                <img src="e8f30a021e718de839424ca4137ef3c0a85400bc518c86d33391ee094ff36853.png" title=" Then  should be an element containing 'Mouse'" width="1920"/>
+                <img src="587c284aa145420f1f771a8192194d3c7522c5baf695a3ecf04932920874aa0c.png" title=" Then  should be an element containing 'Mouse' (completed)" width="1920"/>
+                <img src="587c284aa145420f1f771a8192194d3c7522c5baf695a3ecf04932920874aa0c.png" title=" Then podre validar su Mouse en pantalla (completed)" width="1920"/>
+                <img src="587c284aa145420f1f771a8192194d3c7522c5baf695a3ecf04932920874aa0c.png" title=" Example: {categoria=Mouse} (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.80</span>
+</div>
+</body>
+</html>
