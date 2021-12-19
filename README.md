@@ -439,11 +439,156 @@ _Este archivo contamos con dos escenarios y un background, dado que los escenari
     Examples:
       | telefono   | direccion           | barrio       | departamento | municipio |
       | 3123456789 | Calle 123 # 45 - 67 | Barrio Nuevo | Antioquia       | Medellin    |  
-```        
- 
+```  
+  
+### Paquete stepsDefinitions
+_En estos archivos pasamos de lenguage español a codigo de programacion las instrucciones que encontrabamos en los archivos feature_
+  
+#### Archivo LinioLoginStepsDefinitions
+  ```
+  
+    Actor actor = new Actor("Sebastian");
+
+
+    @Given("^me encuentro en la pagina de login de linio$")
+    public void meEncuentroEnLaPaginaDeLoginDeLinio() {
+        actor.can(BrowseTheWeb.with(GoogleChromeDriver.ChromeHisBrowserWeb().on("https://www.linio.com.co/account/login")));
+    }
+
+    @When("^ingrese los datos de manera correcta$")
+    public void ingreseLosDatosDeManeraCorrecta() {
+        actor.attemptsTo(HacerLogin.ConCredenciales("sebastiansqa@yopmail.com","AutomatizacionSQA2021"));
+    }
+
+
+    @Then("^podre ver la opciones de mi cuenta$")
+    public void podreVerLaOpcionesDeMiCuenta() {
+        actor.should(GivenWhenThen.seeThat(WebElementQuestion.the(UiLinioMisDatosPersonales.TXT_MIS_DATOS_PERSONALES), WebElementStateMatchers.containsText("MIS DATOS PERSONALES")));
+    }
+
+    @Given("^me encuentro en la pagina para hacer login de linio$")
+    public void meEncuentroEnLaPaginaParaHacerLoginDeLinio() {
+        actor.can(BrowseTheWeb.with(GoogleChromeDriver.ChromeHisBrowserWeb().on("https://www.linio.com.co/account/login")));
+    }
+
+    @When("^ingrese los datos de manera incorrecta$")
+    public void ingreseLosDatosDeManeraIncorrecta() {
+        actor.attemptsTo(HacerLogin.ConCredenciales("correoincorrecto@yopmail.com","NoEsLaContraseña"));
+
+    }
+
+    @Then("^no podre ver la opciones de mi cuenta$")
+    public void noPodreVerLaOpcionesDeMiCuenta() {
+        actor.should(GivenWhenThen.seeThat(WebElementQuestion.the(UiLinioMisDatosPersonales.TXT_MIS_DATOS_PERSONALES), WebElementStateMatchers.containsText("MIS DATOS PERSONALES")));
+    }
+  ```
         
+  #### Archivo LinioBusquedaDeProductosStepsDefinitons
+  ```
+   Actor actor = new Actor("Sebastian");
+
+    @Given("^que me encuentro en linio$")
+    public void queMeEncuentroEnLinio() {
+        actor.can(BrowseTheWeb.with(GoogleChromeDriver.ChromeHisBrowserWeb().on("https://www.linio.com.co/")));
+    }
+
+    @When("^busque (.*) en el buscador y seleccione un item de manera aleatoria$")
+    public void busque_Celular_en_el_buscador_y_seleccione_un_item_de_manera_aleatoria(String producto) {
+        actor.attemptsTo(BuscarCategoria.enlinio(producto));
+    }
+
+    @Then("^podre validar su (.*) en pantalla$")
+    public void podreValidarSuCelularEnPantalla(String producto) {
+        actor.should(GivenWhenThen.seeThat(WebElementQuestion.the(UiLinioVisualizarItem.TXT_PRODUCTO.of(producto)) , WebElementStateMatchers.containsText(producto)));
+    }
+  ```
+  
+   #### Archivo LinioConfiguracionDeCuentaStepsDefinitions
+  ```
+   Actor actor = new Actor("Sebastian");
+
+
+    //Background
+    @Given("^dado que me logueo en la pagina de linio$")
+    public void dadoQueMeLogueoEnLaPaginaDeLinio() {
+        actor.can(BrowseTheWeb.with(GoogleChromeDriver.ChromeHisBrowserWeb().on("https://www.linio.com.co/account/login")));
+
+    }
+
+    @When("^vaya al apartado de configuracion de mi cuenta$")
+    public void vayaAlApartadoDeConfiguracionDeMiCuenta() {
+        actor.attemptsTo(HacerLogin.ConCredenciales("sebastiansqa@yopmail.com","AutomatizacionSQA2021"));
+
+    }
+
+    //Scanerio1
+    @When("^cambie los datos de (.*) (.*) en Mis datos personales$")
+    public void cambieLosDatosDeSebastianHoyosEnMisDatosPersonales(String nombre, String apellido) {
+        actor.attemptsTo(CambiarDatosPersonales.enlinio(nombre,apellido));
+    }
+
+
+    @Then("^podre ver el mensaje que los cambios se han guardado$")
+    public void podreVerElMensajeQueLosCambiosSeHanGuardado() {
+        actor.should(GivenWhenThen.seeThat(WebElementQuestion.the(UiLinioMisDatosPersonales.ALERT_CAMBIOS_GUARDADOS)));
+    }
+
+    //Scenario2
+    @When("^Modifique los nuevos valores (.*) (.*) (.*) (.*) (.*) en Mis direcciones$")
+    public void modifiqueLosNuevosValoresCalleBarrioNuevoTolimaRoviraEnMisDirecciones(String telefono,String direccion, String barrio, String departamento, String munucipio) {
+        actor.attemptsTo(EditarDireccion.enlinio(telefono,direccion,barrio,departamento,munucipio));
+    }
+
+    @Then("^podre ver la nueva (.*) en la lista$")
+    public void podreVerLaNuevaCalleEnLaLista(String municipio) {
+
+        actor.should(GivenWhenThen.seeThat(WebElementQuestion.the(UiLinioMisDirecciones.TXT_NUEVA_DIRECCION.of(municipio)) , WebElementStateMatchers.containsText(municipio)));
+    }
+  ```
         
-        
+  
+### Paquete Runners
+  _En este paquete de archivo , son los que ejecutan nuestras pruebas_
+#### Archivo LinioLoginRunner
+  ```
+  @RunWith(CucumberWithSerenity.class)
+@CucumberOptions(
+        features = "src\\test\\resources\\features\\LinioLogin.feature",
+        glue = "stepsDefinitions",
+        snippets = SnippetType.CAMELCASE
+)
+
+public class LinioLoginRunner {
+} 
+  ```
+  
+#### Archivo LinioConfiguracionDeCuentaRunner
+  ```
+  @RunWith(CucumberWithSerenity.class)
+@CucumberOptions(
+        features = "src\\test\\resources\\features\\LinioConfiguracionDeCuenta.feature",
+        glue = "stepsDefinitions",
+        snippets = SnippetType.CAMELCASE
+)
+
+
+public class LinioConfiguracionDeCuentaRunner {
+
+}
+  ```
+  
+  #### Archivo LinioBusquedaDeProductosRunner
+  ```
+  @RunWith(CucumberWithSerenity.class)
+@CucumberOptions(
+        features = "src\\test\\resources\\features\\LinioComprador.feature",
+        glue = "stepsDefinitions",
+        snippets = SnippetType.CAMELCASE
+)
+
+public class LinioBusquedaDeProductosRunner {
+}
+  ```
 #### Esto sería todo por parte del proyecto de automatización a la página Linio, gracias por la atención prestada! 
 
 
