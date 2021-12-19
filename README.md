@@ -1,4 +1,4 @@
-# RetoSQALinio
+# RetoSQAScreenplayLinio
 Este proyecto es realizado con la intención de poner en práctica los conocimientos adquiridos en el semillero de automatización de pruebas impartido por la empresa SQA. En especifico el modelo de Screenplay
 
 ## Importante !
