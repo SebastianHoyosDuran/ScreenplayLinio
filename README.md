@@ -18,7 +18,7 @@ _Las herramientas empleadas para este proyecto son:_
 _Para este reto, nuestra automatización debía cumplir con los siguientes requisitos:_
 
 ```
-Buscar los 5 productos no desde el excel sino desde el feature con examples
+Buscar los 5 productos no desde el Excel sino desde el feature con examples
 Utilizar un Background para realizar como mínimo 2 escenarios.
 Realizar un escenario fallido y uno exitoso sin examples.
 ```
@@ -41,27 +41,27 @@ _En este apartado vamos a definir cada apartado para que quede claro de forma ge
 _Las Uis son las Users Interfaces(Interfases de usuarios), es en donde guardamos los elementos que vamos a necesitar para nuestras pruebas, como lo son cajas de texto, botones, títulos etc._
 
 ### Tasks
-_Las tareas o tasks son el paso a paso de lo que queremos que nuestra automatizacion haga, por ejemplo que le escriba en la caja de busqueda de texto y que le de click en buscar, esun ejemplo valido de una task. Como se peude intunir , aca hacemos uso de los componentes que se encuentren en los uis._
+_Las tareas o tasks son el paso a paso de lo que queremos que nuestra automatización haga, por ejemplo que le escriba en la caja de búsqueda de texto y que le de clic en buscar, es un ejemplo valido de una task. Como se puede intuir , acá hacemos uso de los componentes que se encuentren en los uis._
 
 ### Driver
-_Este paquete hace que habra el navegador con la configuracion que nosotros deseemos. Si lo quieremos que se maxime es por ejemplo una configuracion_
+_Este paquete hace que habrá el navegador con la configuración que nosotros deseemos. Si lo queremos que se maximice es por ejemplo una configuración_
 
 ### Features
-_En este paquete encontramos los archivos feature, por cada archivo feature debe existir u narchivo stepsDefinitions y un archivo Runner, en el archivo feature, escribimos en un lenguaje natural como lo es el español, el paso a paso del escenario que queremos probar._
+_En este paquete encontramos los archivos feature, por cada archivo feature debe existir un archivo stepsDefinitions y un archivo Runner, en el archivo feature, escribimos en un lenguaje natural como lo es el español, el paso a paso del escenario que queremos probar._
 
 ### StepsDefinitions
-_En el paquete stepsDefinitons o definicion de pasos en español, es indicar cuales @Tasks se van a ejecutar en cualeks pasos definidos anteriormente en el feature_
+_En el paquete stepsDefinitons o definición de pasos en español, es indicar cuales @Tasks se van a ejecutar en los pasos definidos anteriormente en el feature_
 
 ### Runner
-_Estos archivos runner, son los que ejecutan la union del el archivo feauture y el archivo stepsDefinitions._
+_Estos archivos runner, son los que ejecutan la unión del el archivo feauture y el archivo stepsDefinitions._
 
-## Paquetes, Clases y Metodos:
+## Paquetes, Clases y Métodos:
 _A continuación mostraremos los códigos y de las clases a que paquete pertenecen y cuál es su función_
 
 ### Paquete Driver
 #### Clase GoogleChromeDriver
-##### Metodo ChromeDrive
-_Este método tiene la intención de este método configurar el navegador con unas caracterisitcas pre determinadas para cuando se desee abrir, se abra con estas configuraciones_
+##### Método ChromeDrive
+_Este método tiene la intención de este método configurar el navegador con unas características pre determinadas para cuando se desee abrir, se abra con estas configuraciones_
 ```
   public static GoogleChromeDriver ChromeHisBrowserWeb(){
         ChromeOptions options = new ChromeOptions();
@@ -74,8 +74,8 @@ _Este método tiene la intención de este método configurar el navegador con un
     }
 ```
 
-##### Metodo WebDriver on
-_La funcion de este metodo es abrir el navegador con el link que le pasemos como parametro_
+##### Método WebDriver on
+_La función de este método es abrir el navegador con el link que le pasemos como parámetro_
 ```
 public WebDriver on(String url){
         driver.get(url);
@@ -90,13 +90,13 @@ _En esta clase encontramos los elementos que usamos en la pagina de inicio de li
    // Barra buscadora
     public static final Target TXT_BUSCADOR = Target.the("").locatedBy("//div[@class = 'input-group']//input[@type='search' and @placeholder='Busca productos']");
 
-    // Boton busqueda (Lupa)
+    // Botón búsqueda (Lupa)
     public static final Target BTN_BUSCADOR = Target.the("").locatedBy("//div[@class='input-group-btn']//button[@class='btn btn-primary btn-search']");
 
-    // Boton para cerrar modal
+    // Botón para cerrar modal
     public static final Target BTN_CERRAR_MODAL = Target.the("").locatedBy("//div[@class='dy-modal-contents']//div[@class='dy-lb-close']");
 
-    //Boton para cerrar anuncio
+    //Botón para cerrar anuncio
     public  static final Target BTN_CERRAR_ANUNCIO = Target.the("").located(By.id("dy-bottompromobar-close"));
 
     public  static final Target BTN_ABRIR_MENU_DESPEGABLE = Target.the("").locatedBy("//a[@href='/account']");
@@ -122,7 +122,7 @@ _En esta clase encontramos los elementos que usamos en la pagina de login de lin
 ```
 
 #### Clase UiLinioVisalizarItem
-_En esta clase encontramos los elementos que usamos en la pagina de linio cuando buscamos un item_
+_En esta clase encontramos los elementos que usamos en la pagina de linio cuando buscamos un ítem_
 ```
  // Titulo de cada item
     public static final Target TXT_NOMBRE_ITEM = Target.the("").locatedBy("//div[@class='detail-container']//span [@class='title-section' and contains(text(),'{0})]");
@@ -130,7 +130,7 @@ _En esta clase encontramos los elementos que usamos en la pagina de linio cuando
 
 
 #### Clase UiLinioMisDatosPersonales
-_En esta clase encontramos los elementos que usamos en la pagina de linio cuando queremos modificar informacion personal en el apartado de configuracion_
+_En esta clase encontramos los elementos que usamos en la página de linio cuando queremos modificar información personal en el apartado de configuración_
 ```
 
     //Boton ir mis datos personales
@@ -145,7 +145,7 @@ _En esta clase encontramos los elementos que usamos en la pagina de linio cuando
     //Boton guardar cambios
     public static final Target BTN_GUARDAR_CAMBIOS = Target.the("").locatedBy("//button[@type='submit' and @class='btn btn-primary btn-sm col-12']");
 
-    //Aletar cambias guardados
+    //Alerta cambios guardados
     public static final Target ALERT_CAMBIOS_GUARDADOS = Target.the("").locatedBy("//div[@class='alert-text' and contains(.,'¡Tus datos han sido guardados!')]");
 
     //Texto mis datos personales
@@ -154,7 +154,7 @@ _En esta clase encontramos los elementos que usamos en la pagina de linio cuando
 ```
 
 #### Clase UiLinioMisDirecciones
-_En esta clase encontramos los elementos que usamos en la pagina de linio cuando queremos modificar informacion de direcciones para el envio de los productos en el apartado de configuracion_
+_En esta clase encontramos los elementos que usamos en la página de linio cuando queremos modificar información de direcciones para el envío de los productos en el apartado de configuración_
 ```
     //Boton ir a mis direcciones
     public static final Target BTN_IR_MIS_DIRECCIONES = Target.the("").locatedBy("//div[@class='item-section']//span[contains(.,'Mis direcciones')]");
@@ -193,7 +193,7 @@ _En esta clase encontramos los elementos que usamos en la pagina de linio cuando
 
 ### Paquete Tasks
 #### Clase HacerLogin
-_En este clase contamos con el paso a paso para realizar el login desde la pagina de login de linio, esta clase cuenta con los parametros de Correo y Contraseña porque los necesitamos para hacer el logeo._
+_En este clase contamos con el paso a paso para realizar el login desde la pagina de login de linio, esta clase cuenta con los parámetros de Correo y Contraseña porque los necesitamos para hacer el logeo._
 ```
 public class HacerLogin implements Task{
 
@@ -231,7 +231,7 @@ public class HacerLogin implements Task{
 ```
 
 #### Clase BuscarCategoria
-_En esta clase la intencion es que busque una categoria en el buscador y una vez la busque, seleccione un item de manera aleatoria, esta clase recibe un parametro de producto, pero puede ser perfectamente el nombre de una categoria general y no de un producto en especifico_
+_En esta clase la intención es que busque una categoría en el buscador y una vez la busque, seleccione un ítem de manera aleatoria, esta clase recibe un parámetro de producto, pero puede ser perfectamente el nombre de una categoría general y no de un producto en especifico_
 
 ```
    private String producto;
@@ -279,7 +279,7 @@ _En esta clase la intencion es que busque una categoria en el buscador y una vez
 ```
 
 #### Clase EditarDireccion
-_La funcion de esta clase es que paso a paso se diriga al apartado de configuracion de cuenta, luego a mis direcciones, luego a editar direccion, luego que agregue la informacion que recibe como parametro que en este caso es: direccion, telefono, barrio, departamento, municipio. Y por ultimo le de en guardar cambios_
+_La función de esta clase es que paso a paso se dirigía al apartado de configuración de cuenta, luego a mis direcciones, luego a editar dirección, luego que agregue la información que recibe como parámetro que en este caso es: dirección, teléfono, barrio, departamento, municipio. Y por último le dé en guardar cambios_
 
 ```
 public class EditarDireccion implements Task {
@@ -337,7 +337,7 @@ public class EditarDireccion implements Task {
 ```
 
 #### Clase CambiarDatosPersonales
-_La funcion de esta clase es que paso a paso se diriga al apartado de configuracion de cuenta, mis datos perrsonales, luego ingrese los valores que esta recibiendo por parametro, en este caso el nombre y apellido y por ultimo le de en guardar._
+_La función de esta clase es que paso a paso se dirigía al apartado de configuración de cuenta, mis datos personales, luego ingrese los valores que está recibiendo por parámetro, en este caso el nombre y apellido y por ultimo le dé en guardar._
 
 ```
 public class CambiarDatosPersonales implements Task{
@@ -391,7 +391,7 @@ _En este escenario es que logra hacer el login de manera exitosa dado que se ing
 
 
 ##### Scenario Fallido
-_En este escenario intenta hacer el login, pero este termina de manera fallido dado que se inteta hacer el login con un correo y una contraseña incorrectos. Cuando intente continuar con los demas pasos, no podra acceder a la configuracion de cuenta porque no se encentra logueado_
+_En este escenario intenta hacer el login, pero este termina de manera fallido dado que se intenta hacer el login con un correo y una contraseña incorrectos. Cuando intente continuar con los demás pasos, no podrá acceder a la configuración de cuenta porque no se encentra logueado_
 ```
  @ScenarioFallido
   Scenario: hacer login de manera fallida
@@ -401,7 +401,7 @@ _En este escenario intenta hacer el login, pero este termina de manera fallido d
 ```
 
 #### Archivo LinioComprador.feature
-_En este escenario se plantea la busqueda de un grupo de categorias, en este caso 5, mediante un Scenario Outline con sus respectivos Examples, lo que realiza este escenario es la serie de pasos con cada uno de los examples. Cuando encontremos la palabra <categoria> esta será reemplazada con el nombre de la categoria, estos escenarios se ejecutan segun la cantidad de examples que coloquemos, porque el va a realziar toda la ejecucion del escenario con un example y cuando termine volvera a ejecutar todo el escenario con el siguiente example._
+_En este escenario se plantea la búsqueda de un grupo de categorías, en este caso 5, mediante un Scenario Outline con sus respectivos Examples, lo que realiza este escenario es la serie de pasos con cada uno de los examples. Cuando encontremos la palabra <categoria> esta será reemplazada con el nombre de la categoría, estos escenarios se ejecutan según la cantidad de examples que coloquemos, porque el va a realizar toda la ejecución del escenario con un example y cuando termine volverá a ejecutar todo el escenario con el siguiente example._
 ```
   Scenario Outline: Buscar un producto
     Given que me encuentro en linio
@@ -417,7 +417,7 @@ _En este escenario se plantea la busqueda de un grupo de categorias, en este cas
 ```
         
 #### Archivo LinioConfiguracionDeCuenta.feature
-_Este archivo contamos con dos escenarios y un background, dado que los escenarios son una serie de pasos para cumplir una tarea, un background lo podemos definir como unas precondiciones que siempre necesitamos cumplir para todos los distintos escenarios que tengamos en el archivo. En este caso, dado que queremos hacer modificiones en nuestros datos personales y en la direccion de entrega, es necesario que primero que todo , etemos en la pagina de linio, y segundo debemos estar logeados._
+_Este archivo contamos con dos escenarios y un background, dado que los escenarios son una serie de pasos para cumplir una tarea, un background lo podemos definir como unas precondiciones que siempre necesitamos cumplir para todos los distintos escenarios que tengamos en el archivo. En este caso, dado que queremos hacer cambios en nuestros datos personales y en la dirección de entrega, es necesario que primero que todo , entremos en la página de linio, y segundo debemos estar logeados._
 ```
       Background: Logearse en Linio
     Given dado que me logueo en la pagina de linio
@@ -442,7 +442,7 @@ _Este archivo contamos con dos escenarios y un background, dado que los escenari
 ```  
   
 ### Paquete stepsDefinitions
-_En estos archivos pasamos de lenguage español a codigo de programacion las instrucciones que encontrabamos en los archivos feature_
+_En estos archivos pasamos de lenguaje español a código de programación las instrucciones que encontrábamos en los archivos feature_
   
 #### Archivo LinioLoginStepsDefinitions
   ```
@@ -548,7 +548,7 @@ _En estos archivos pasamos de lenguage español a codigo de programacion las ins
         
   
 ### Paquete Runners
-  _En este paquete de archivo , son los que ejecutan nuestras pruebas_
+  _En este paquete de archivo, son los que ejecutan nuestras pruebas_
 #### Archivo LinioLoginRunner
   ```
   @RunWith(CucumberWithSerenity.class)
