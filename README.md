@@ -28,6 +28,11 @@ _Antes de continuar, me gustaría añadir que grabé un video explicando las dis
 * [Video](https://youtu.be/haowow6Au4U) - Presentación del proyecto
 * [![Alt text](https://img.youtube.com/vi/haowow6Au4U/0.jpg)](https://www.youtube.com/watch?v=haowow6Au4U)
 
+## Resultado del test
+_Estos son los resultados del test, uno de las pruebas da fallido , dado el tercer punto , de los requerimientos se solcita un escenario fallido._
+[![Test-Resultados.png](https://i.postimg.cc/HsshgqjS/Test-Resultados.png)](https://postimg.cc/jCmX6kHN)
+
+
 ## Modelo de Screenplay
 _Es un patrón de diseño orientado al comportamiento BDD. Presenta un alto desacoplamiento de la interfaz de usuario. Propone trabajar en términos de tareas y no de interfaz de usuario_
 
